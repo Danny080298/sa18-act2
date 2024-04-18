@@ -84,3 +84,13 @@ production:
   database: store_app_production
   username: store_app
   password: <%= ENV["STORE_APP_DATABASE_PASSWORD"] %>
+
+
+development:
+  <<: *default
+  database: store_app_development
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: danny
+  password: hokcongu123
